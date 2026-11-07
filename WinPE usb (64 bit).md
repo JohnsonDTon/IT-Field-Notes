@@ -56,8 +56,12 @@ Create partition for WinPE
 ```powershell
 clean
 create partition primary size=2048
-assign letter=P
+```
+```powershell
+list partition
+select partition 1
 format fs=fat32 quick label=WINPE
+assign letter=P
 ```
 
 Create storage partition for remaining space

@@ -1,5 +1,5 @@
 WinPE USB is so you can boot into a cmdline and do stuff <br>
-I built this because I need to quick format hard-drives
+I built this because I need to format hard-drives that don't have built-in secure wipe in bios.
 
 Download the ADK and WinPE Add-On
 ```text

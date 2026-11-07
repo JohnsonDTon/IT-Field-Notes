@@ -23,6 +23,14 @@ RAM
 ```text
 Run memtest86
 ```
+Check current speed
+```powershell
+Get-CimInstance Win32_PhysicalMemory | Select-Object BankLabel, Speed, ConfiguredClockSpeed
+```
+Check part number and see if it is compatible with said speed
+```powershell
+Get-CimInstance Win32_PhysicalMemory | Select-Object BankLabel, Capacity, Manufacturer, PartNumber
+```
 
 Temperature
 ```text

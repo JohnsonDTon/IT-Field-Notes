@@ -78,3 +78,8 @@ list disk
 select disk 0
 clean
 ```
+
+If list disk doesnt show the disk, change BIOS setting from RAID to below
+```text
+BIOS → SATA Operation / SATA Mode → IDE, Compatibility, or AHCI
+```

@@ -8,7 +8,7 @@ https://learn.microsoft.com/windows-hardware/get-started/adk-install
 → Other ADK downloads → Windows 10, version 2004)
 ```
 
-Install the ADK
+Install the ADK (note, if you already installed the 64 bit, you gotta uninstalled that via Installed Apps screen)
 ```text
 On features, you just need Deployment Tools  ✔  (uncheck everything else)
 ```

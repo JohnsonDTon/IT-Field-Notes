@@ -25,7 +25,7 @@ copype x86 C:\WinPE_x86
 mkdir C:\mount
 ```
 
-Plug in your fresh USB. Set up the USB. Run in cmdline
+Plug in your fresh USB. Set up the USB. Run in powershell admin
 ```powershell
 diskpart
 list disk

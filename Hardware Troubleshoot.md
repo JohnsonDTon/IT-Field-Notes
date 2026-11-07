@@ -62,3 +62,8 @@ Battery
 ```powershell
 powercfg /batteryreport
 ```
+
+Check motherboard brand
+```powershell
+Get-CimInstance Win32_BaseBoard | Select-Object Manufacturer, Product
+```

@@ -40,7 +40,7 @@ Dism /Add-Driver /Image:C:\mount /Driver:C:\Drivers\HP-WinPE /Recurse
 Dism /Unmount-Image /MountDir:C:\mount /Commit
 ```
 
-Plug in your fresh USB. Set up the USB. Run in cmdline
+Plug in your fresh USB. Set up the USB. Run in powershell admin
 ```powershell
 diskpart
 list disk

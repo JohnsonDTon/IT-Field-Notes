@@ -79,7 +79,7 @@ robocopy C:\WinPE_amd64\media P:\ /E
 ```
 
 
-How to use USB
+How to use USB  (if cleaning a disk thats leaving a company, use clean all as it writes zeroes all over)
 ```powershell
 diskpart
 list disk

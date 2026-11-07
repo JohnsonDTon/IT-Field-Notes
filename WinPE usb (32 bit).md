@@ -57,7 +57,7 @@ format fs=ntfs quick label=STORAGE
 exit
 ```
 
-Copy files into USB
+Copy files into USB. Run in admin 'Deployment and Imaging Tools Environment'
 ```powershell
 bootsect /nt60 P: /force /mbr
 robocopy C:\WinPE_x86\media P:\ /E

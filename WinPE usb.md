@@ -27,13 +27,20 @@ Download HP Client Windows PE 10 x64 Driver Pack
 https://ftp.hp.com/pub/caps-softpaq/cmit/softpaq/WinPE10.html
 ```
 
-Install the drivers
+Extract the drivers
 ```text
 It will ask location. Choose this location
 C:\Drivers\HP-WinPE
 ```
 
-Plug in your fresh USB. Set up the USB
+Mount WinPE and add the HP Drivers. Run in admin 'Deployment and Imaging Tools Environment'
+```powershell
+Dism /Mount-Image /ImageFile:C:\WinPE_amd64\media\sources\boot.wim /Index:1 /MountDir:C:\mount
+Dism /Add-Driver /Image:C:\mount /Driver:C:\Drivers\HP-WinPE /Recurse
+Dism /Unmount-Image /MountDir:C:\mount /Commit
+```
+
+Plug in your fresh USB. Set up the USB. Run in cmdline
 ```powershell
 diskpart
 list disk
@@ -65,4 +72,24 @@ Copy files into USB
 ```powershell
 bootsect /nt60 P: /force /mbr
 robocopy C:\WinPE_amd64\media P:\ /E
+```
+
+
+How to use USB
+```powershell
+diskpart
+list disk
+select disk 0
+detail disk
+clean
+exit
+wpeutil shutdown
+```
+
+Short version is
+```powershell
+diskpart
+list disk
+select disk 0
+clean
 ```

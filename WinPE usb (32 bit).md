@@ -4,7 +4,7 @@ I built this because I need to quick format hard-drives
 Download the 2004 ADK and its WinPE add-on<br>
 Both are listed under “Other ADK downloads” on Microsoft’s ADK page.
 ```text
-[https://learn.microsoft.com/windows-hardware/get-started/adk-install](https://learn.microsoft.com/windows-hardware/get-started/adk-install
+https://learn.microsoft.com/windows-hardware/get-started/adk-install
 → Other ADK downloads → Windows 10, version 2004)
 ```
 

@@ -1,5 +1,6 @@
 WinPE USB is so you can boot into a cmdline and do stuff <br>
-I built this because I need to quick format hard-drives
+I built this because I need to quick format hard-drives <br>
+THIS ONE IS FOR OLD BIOS MACHINES. It can’t boot a 64-bit UEFI PC, so use the x64 USB for those. <br> <br>
 
 Download the 2004 ADK and its WinPE add-on<br>
 Both are listed under “Other ADK downloads” on Microsoft’s ADK page.

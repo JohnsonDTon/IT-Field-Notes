@@ -13,7 +13,7 @@ Install the ADK (note, if you already installed the 64 bit, you gotta uninstalle
 On features, you just need Deployment Tools  ✔  (uncheck everything else)
 ```
 
-Install the WinPE Add-On
+Install the WinPE Add-On (note, if you already installed the 64 bit, you gotta uninstalled that via Installed Apps screen)
 ```text
 Accept Defaults
 ```

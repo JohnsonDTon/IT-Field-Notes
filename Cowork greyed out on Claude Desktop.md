@@ -97,7 +97,7 @@ Restart-Computer
 ```
 Download and install Claude
 ```text
-https://claude.com/download -> Save to C:\Temp (make it if folder doesnt exist) -> Run in admin
+https://claude.com/download -> Save to C:\Temp (make it if folder doesnt exist) -> Run in admin, Input admin credentials when UAC is prompted.
 ```
 
 Check what Claude you have

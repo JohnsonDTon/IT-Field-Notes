@@ -70,3 +70,46 @@ Start-Process "shell:AppsFolder\Claude_pzs8sxrjxfjjc!Claude"
 ```text
 WIN+R -> shell:AppsFolder -> doubleclick Claude
 ```
+
+
+---
+Test his one <br>
+
+Uninstall Claude from the Settings menu
+```text
+Settings > Apps > Installed apps > Claude > Uninstall
+```
+
+Fallback command to uninstall Claude. I run both just in case, Claude is persistent.
+```powershell
+& "$env:LOCALAPPDATA\AnthropicClaude\Update.exe" --uninstall
+```
+
+Check if Virtual Machine Platform Windows Features is enabled
+```powershell
+Get-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
+```
+
+Enable it if its disabled
+```powershell
+Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -All -NoRestart
+Restart-Computer
+```
+Download and install Claude
+```text
+https://claude.com/download -> Save to C:\Temp (make it if folder doesnt exist) -> Run in admin
+```
+
+Check what Claude you have
+```powershell
+Get-StartApps *Claude*
+```
+
+Launch the MSIX version directly (Change this to the ID of your Claude!)
+```powershell
+Start-Process "shell:AppsFolder\Claude_pzs8sxrjxfjjc!Claude"
+```
+(GUI ALTERNATIVE)
+```text
+WIN+R -> shell:AppsFolder -> doubleclick Claude
+```

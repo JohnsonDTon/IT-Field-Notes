@@ -1,4 +1,5 @@
 The error is "Cowork requires Claude Desktop be installed with our modern installer" <br>
+Run these commands when the user is logged in! <br>
 This documentation is still in progress! <br>
 
 Stop all process of Claude

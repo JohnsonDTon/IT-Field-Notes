@@ -1,4 +1,4 @@
-The error is "Cowork requires Claude Desktop be installed with our modern installer" <br>
+The error is "Cowork requires Claude Desktop be installed with our modern installer" and Claude still stays in machine even if you uninstall it under "Installed Apps" settings <br>
 Run these commands when the user is logged in! <br>
 This documentation is still in progress! <br>
 

@@ -73,7 +73,15 @@ WIN+R -> shell:AppsFolder -> doubleclick Claude
 
 
 ---
-Test his one <br>
+Stop all process of Claude
+```powershell
+Get-Process *claude* | Stop-Process -Force
+```
+
+Remove the MSIX package for a clean install
+```powershell
+Get-AppxPackage -AllUsers *Claude* | Remove-AppxPackage -AllUsers
+```
 
 Uninstall Claude from the Settings menu
 ```text
